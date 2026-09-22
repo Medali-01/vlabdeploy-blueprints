@@ -1,0 +1,6 @@
+apiVersion: vlabdeploy.io/v2
+
+kind: LabBlueprint
+
+metadata:
+  name: [invalid
