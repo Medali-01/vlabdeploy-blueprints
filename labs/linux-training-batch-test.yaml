@@ -4,7 +4,7 @@ kind: LabBlueprint
 
 metadata:
   name: linux-training-batch-test
-  title: Linux Training Batch Test
+  title: Linux Training Batch Test V2
   description: Blueprint GitOps de test pour valider la synchronisation multi-fichiers.
   revision: 1
   labels:
