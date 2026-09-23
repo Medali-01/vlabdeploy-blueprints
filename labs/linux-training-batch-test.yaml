@@ -4,7 +4,7 @@ kind: LabBlueprint
 
 metadata:
   name: linux-training-batch-test
-  title: Linux Training Lab - Selective Webhook E2E
+  title: Linux Training Lab - Selective Webhook Final
   description: Blueprint GitOps de test pour valider la synchronisation multi-fichiers.
   revision: 1
   labels:
