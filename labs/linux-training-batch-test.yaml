@@ -1,0 +1,52 @@
+apiVersion: vlabdeploy.io/v2
+
+kind: LabBlueprint
+
+metadata:
+  name: linux-training-batch-test
+  title: Linux Training Batch Test - Manual Publish E2E
+  description: Blueprint GitOps de test pour valider la synchronisation multi-fichiers.
+  revision: 1
+  labels:
+    environment: training
+    managed-by: gitops
+
+spec:
+  machines:
+    - name: alma-server
+      displayName: AlmaLinux Server
+      source:
+        strategy: template-id
+        templateId: 8d867d0d-e656-4daf-b23d-7ceeafd44514
+      resources:
+        cpu: 2
+        ramGb: 4
+        diskGb: 40
+      credentials:
+        strategy: runtime
+        defaultLogin: student
+
+    - name: ubuntu-server
+      displayName: Ubuntu Server
+      source:
+        strategy: template-id
+        templateId: 3d9181e6-9164-42a9-8afa-88592c4faa94
+      resources:
+        cpu: 2
+        ramGb: 4
+        diskGb: 40
+      credentials:
+        strategy: runtime
+        defaultLogin: student
+
+  network:
+    mode: group-default
+
+  provisioning:
+    mode: auto
+
+  access:
+    mode: auto
+
+  deployment:
+    instancesPerTarget: 1
