@@ -4,7 +4,7 @@ kind: LabBlueprint
 
 metadata:
   name: linux-training-batch-test
-  title: Atelier Linux GitOps
+  title: Atelier Linux GitOps - Validation finale
   description: Blueprint GitOps de test pour valider la synchronisation multi-fichiers.
   revision: 1
   labels:
