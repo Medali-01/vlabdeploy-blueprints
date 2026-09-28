@@ -3,8 +3,8 @@ apiVersion: vlabdeploy.io/v2
 kind: LabBlueprint
 
 metadata:
-  name: linux-training-batch-test 3
-  title: Linux Training Batch Test - Auto Publish After Restore
+  name: linux-training-batch-test
+  title: Atelier Linux GitOps
   description: Blueprint GitOps de test pour valider la synchronisation multi-fichiers.
   revision: 1
   labels:
